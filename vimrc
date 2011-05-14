@@ -214,7 +214,7 @@ imap <D-CR> <ESC>o
 
 
 " Change background color when inserting.
-"let g:insert_mode_background_color = "#18434E"
+let g:insert_mode_background_color = "#18434E"
 
 " Run a test tool with the current file and line number
 " The test tool is run in the last Terminal window
@@ -401,3 +401,4 @@ map <Esc>[A <Up>
 " (Keep this at the end.)
 " Machine-local vim settings.
 silent source ~/.vimrc.local
+
