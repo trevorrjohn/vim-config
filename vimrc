@@ -400,5 +400,5 @@ map <Esc>[A <Up>
 
 " (Keep this at the end.)
 " Machine-local vim settings.
-silent source ~/.vimrc.local
+silent! source ~/.vimrc.local
 
