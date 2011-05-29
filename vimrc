@@ -186,7 +186,7 @@ map <leader>t :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin
 map <leader>T :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 
 " ctags again with gemhome added
-map <leader>t :!/usr/local/bin/ctags -R --exclude=.git --exclude=log * `rvm gemhome`/*<CR>
+map <leader>rt :!/usr/local/bin/ctags -R --exclude=.git --exclude=log * `rvm gemhome`/*<CR>
 map <leader>T :!rdoc -f tags -o tags * `rvm gemhome` --exclude=.git --exclude=log
 
 " git blame
@@ -319,11 +319,11 @@ set cursorline
 let g:CommandTMaxHeight=20
 map <D-N> :CommandTFlush<CR>:CommandT<CR>
 map <Leader>f :CommandTFlush<CR>:CommandT<CR>
+map <leader>t :CommandT<CR>
 
 " Easy access to the shell.
 map <Leader><Leader> :!
 
-<<<<<<< HEAD
 " Rename tabs to show tab number.
 " (Based on http://stackoverflow.com/questions/5927952/whats-implementation-of-vims-default-tabline-function)
 if exists("+showtabline")
