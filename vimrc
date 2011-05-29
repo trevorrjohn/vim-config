@@ -289,6 +289,7 @@ let NERDSpaceDelims = 1
 " Comment/uncomment lines.
 map <leader>/ <plug>NERDCommenterToggle
 map <D-/> <plug>NERDCommenterToggle
+imap <D-/> <ESC><plug>NERDCommenterToggle i
 
 " Copy current file path to system pasteboard.
 map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
@@ -319,6 +320,7 @@ set cursorline
 let g:CommandTMaxHeight=20
 map <D-N> :CommandTFlush<CR>:CommandT<CR>
 map <Leader>f :CommandTFlush<CR>:CommandT<CR>
+imap <D-N> <ESC>:CommandTFlush<CR>:CommandT<CR>
 map <leader>t :CommandT<CR>
 
 " Easy access to the shell.
