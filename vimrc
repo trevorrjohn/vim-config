@@ -210,8 +210,6 @@ set showcmd
 imap <D-CR> <ESC>o
 
 
-" Change background color when inserting.
-let g:insert_mode_background_color = "#18434E"
 
 " Run a test tool with the current file and line number
 " The test tool is run in the last Terminal window
@@ -399,15 +397,16 @@ map! <F11> <C-o>:q<CR>
 
 map <Esc>[A <Up>
 
-=======
-
+"Some things people like in their .vimrc.local
+>>>>>>> color change off by default
 "no gui tab bar
 "set guioptions-=e
 
 "no scrollbars
 "set guioptions-=rL
 
-
+"Change background color when inserting.
+"let g:insert_mode_background_color = "#18434E"
 
 >>>>>>> Leave GUI chrome mac-like by default.  Make cmd-/ comment a line.  Remove fufFinder call
 " (Keep this at the end.)
