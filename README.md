@@ -7,6 +7,11 @@
     git submodule update --init
     ln -s ~/.vim/vimrc ~/.vimrc
 
+# Installing Command-t
+    cd ~/.vim/bundle/command-t/ruby/command-t/
+    ruby extconf.rb
+    make
+
 # Updating
 
 As long as your checkout is kept clean, you can easily update, rebase your local changes and update submodules with:
