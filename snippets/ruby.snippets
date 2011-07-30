@@ -2,7 +2,7 @@ snippet desc Describe subject
 	describe "${1:subject}" do
 		${2}
 	end
-snippet cont Context
+snippet con Context
 	context "${1:subject}" do
 		${2}
 	end
@@ -22,3 +22,8 @@ snippet let
 	let(:${1}) { ${2} }
 snippet its
 	its(:${1}) { ${2} }
+snippet i it closure
+	it { ${1} }
+snippet subj subject
+	subject { ${1} }
+
