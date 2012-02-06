@@ -19,7 +19,17 @@ function! RunFocusedTest()
   let spec_command = system('if [ x != "x"$(which spec) ] ; then echo -n spec ; elif [ x != "x"$(which rspec) ] ; then echo -n rspec ; fi')
   let filename = expand("%")
   if filename =~ '_spec\.rb$'
-    call RunTestTool("be ".spec_command." ".expand("%").":".line("."))
+    call RunTestTool("".spec_command." ".expand("%").":".line("."))
+  endif
+endfunction
+
+" If the file ends with _spec.rb, RunTestTool with rspec
+" If the file ends with .feature, RunTestTool with cuke
+command! RunFocusedTest :call RunFocusedTest()
+function! RunFocusedTest()
+  let filename = expand("%")
+  if filename =~ '_spec\.rb$'
+    call RunTestTool("rspec ".expand("%").":".line("."))
   endif
   if filename =~ '\.feature$'
     call RunTestTool("cuke ".expand("%").":".line("."))
@@ -28,12 +38,19 @@ endfunction
 
 command! RunTests :call RunTests()
 function! RunTests()
-  let spec_command = system('if [ x != "x"$(which spec) ] ; then echo -n spec ; elif [ x != "x"$(which rspec) ] ; then echo -n rspec ; fi')
   let filename = expand("%")
   if filename =~ '_spec\.rb$'
-    call RunTestTool("be ".spec_command." ".expand("%"))
-  endif
-  if filename =~ '\.feature$'
-    call RunTestTool("cuke ".expand("%"))
+    call RunTestTool("rspec ".expand("%"))
+  elseif filename =~ '.rb'
+    let splitFilename = split(filename, '\/')
+    let folders = splitFilename[1:-2]
+    let shortenedName = split(splitFilename[-1], '\.rb')[0]
+
+    let testFilename = "spec/"
+    for folder in folders
+      let testFilename = testFilename.folder."/"
+    endfor
+    let testFilename = testFilename.shortenedName."_spec.rb"
+    call RunTestTool("bundle exec rspec ".testFilename)
   endif
 endfunction

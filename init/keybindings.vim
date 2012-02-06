@@ -72,8 +72,13 @@ map <D-N>       :CommandTFlush<CR>:CommandT<CR>
 map <leader>f   :CommandTFlush<CR>:CommandT<CR>
 
 " ctags with rails load path
-map <leader>t :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts<CR>
-map <leader>T :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
+map <leader>r :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts<CR>
+map <leader>R :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
+
+" Run test at cursor
+map <leader>T :RunFocusedTest<CR>
+" Run all tests in file
+map <leader>t :w<CR>:RunTests<CR>
 
 " Git blame
 map <leader>g   :Gblame<CR>
