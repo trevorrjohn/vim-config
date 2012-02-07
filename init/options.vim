@@ -1,4 +1,4 @@
-set guifont=Inconsolata:h24
+set guifont=Inconsolata:h20
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
