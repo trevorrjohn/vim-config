@@ -35,5 +35,16 @@ function! RunTests()
   endif
   if filename =~ '\.feature$'
     call RunTestTool("cuke ".expand("%"))
+  elseif filename =~ '.rb'
+    let splitFilename = split(filename, '\/')
+    let folders = splitFilename[1:-2]
+    let shortenedName = split(splitFilename[-1], '\.rb')[0]
+
+    let testFilename = "spec/"
+    for folder in folders
+      let testFilename = testFilename.folder."/"
+    endfor
+    let testFilename = testFilename.shortenedName."_spec.rb"
+    call RunTestTool("bundle exec rspec ".testFilename)
   endif
 endfunction
