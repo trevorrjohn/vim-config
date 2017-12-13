@@ -84,6 +84,7 @@ lets you view and cycle through your previous copy and paste registers on the fl
 ## Searching
 * [ack](https://github.com/mileszs/ack.vim) lets you shell out to ack within vim using `:Ack pattern [directory]`.  By default, results show up in the quickfix window.  You can use `:AckAdd` to append to the quickfix window or prefix 'Ack' with an 'L' to use the location list (just like `:grep`'s siblings).
 * [ag](https://github.com/epmatsw/ag.vim) is the above but for ag ([a faster ack replacement](https://github.com/ggreer/the_silver_searcher))
+* [rg](https://github.com/jremmen/vim-ripgrep) is the above but for rg ([ripgrep](https://github.com/BurntSushi/ripgrep))
 * [vim-abolish](https://github.com/tpope/vim-abolish) deserves a few lines:
     * It replaces `teh` with `the`.  Say hello to autocorrect memes, Ruby edition.  You can define your own with a regex-like syntax.
     * It helps you replace things with capitalization differences.  If you had the line `foo = Foo.new`, you could run `:S/foo/bar/g` to get `bar = Bar.new` (note the capital 'S').  You can also use curly braces like you would on the command line, for instance `:%S/facilit{y,ies}/building{,s}/g`.

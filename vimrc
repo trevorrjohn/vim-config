@@ -101,6 +101,7 @@ else
   Plugin 'tpope/vim-abolish'
   Plugin 'henrik/vim-qargs'
   Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'jremmen/vim-ripgrep'
 
   "
   " Navigation
