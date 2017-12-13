@@ -128,13 +128,18 @@ nmap du :diffupdate<CR>
 " Gundo.vim
 map <leader>u :GundoToggle<CR>
 
+" fzf
+" <leader>f
+nmap <leader>f :FZF<CR>
+nmap <leader>F :FZF<CR>
+
 " ctrlp
 " <leader>f is the default trigger (set in init/ctrlp.vim)
-nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
+" nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
 
 " Additional mapping for buffer search
-nnoremap <silent> <leader>bb :CtrlPBuffer<cr>
-map <D-e> :CtrlPBuffer<CR>
+" nnoremap <silent> <leader>bb :CtrlPBuffer<cr>
+" map <D-e> :CtrlPBuffer<CR>
 
 " Map most recently used
 nnoremap <silent> <C-p> :CtrlPMRU<cr>
@@ -161,7 +166,7 @@ map <leader>jT :CtrlP test<CR>
 
 "Cmd-Shift-(M)ethod - jump to a method (tag in current file)
 "Ctrl-m is not good - it overrides behavior of Enter
-nnoremap <silent> <D-M> :CtrlPBufTag<CR>
+" nnoremap <silent> <D-M> :CtrlPBufTag<CR>
 
 " Mappings inherited from FuzzyFinder
 map <leader><C-N> :CtrlPCurWD<CR>

@@ -21,6 +21,7 @@ if empty(system("grep lazy_load ~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
   echoerr "Vundle plugins are not installed. Please run ~/.vim/bin/install"
 else
   set rtp+=~/.vim/bundle/Vundle.vim
+  set rtp+=/usr/local/opt/fzf
 
   call vundle#begin()
 
@@ -101,6 +102,7 @@ else
   Plugin 'tpope/vim-abolish'
   Plugin 'henrik/vim-qargs'
   Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'junegunn/fzf.vim'
   Plugin 'jremmen/vim-ripgrep'
 
   "

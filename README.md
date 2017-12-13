@@ -90,7 +90,8 @@ lets you view and cycle through your previous copy and paste registers on the fl
     * It helps you replace things with capitalization differences.  If you had the line `foo = Foo.new`, you could run `:S/foo/bar/g` to get `bar = Bar.new` (note the capital 'S').  You can also use curly braces like you would on the command line, for instance `:%S/facilit{y,ies}/building{,s}/g`.
     * It converts between camelCase and snake_case.  Use `cr` followed 's' for snake_case, 'm' for MixedCase, 'c' for camelCase, or 'u' for UPPER_CASE (these work within the current word and don't take a motion).
 * [vim-qargs](https://github.com/nelstrom/vim-qargs) ([stack overflow](http://stackoverflow.com/questions/5686206/search-replace-using-quickfix-list-in-vim/5686810#5686810)) is kind of like Cdo.
-* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) is a fuzzy file finder invoked by hitting Ctrl-P in normal mode and typing some part of the file name you'd like to open.  This config also has `,f` mapped to the same function.
+* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) is a fuzzy file finder invoked by hitting Ctrl-P in normal mode and typing some part of the file name you'd like to open.
+* [fzf](https://github.com/junegunn/fzf.vim) is a fuzzy file finder invoked by the command `:FZF` in normal mode and typing some part of the file name you'd like to open.  This config also has `,f` mapped to the same function. *NOTE* you must install fzf locally using `% brew install fzf`
 
 ## Navigation
 * [nerdtree](https://github.com/scrooloose/nerdtree) puts a directory tree on the left side of the screen.  Press `\` to open it at your project root, or `Shift-\` to open it with the current file selected.  You can press `m` to move, delete, or create files.  Press `?` inside the tree to get more help.
