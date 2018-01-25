@@ -130,16 +130,16 @@ map <leader>u :GundoToggle<CR>
 
 " fzf
 " <leader>f
-nmap <leader>f :FZF<CR>
-nmap <leader>F :FZF<CR>
+" nmap <leader>f :FZF<CR>
+" nmap <leader>F :FZF<CR>
 
 " ctrlp
 " <leader>f is the default trigger (set in init/ctrlp.vim)
-" nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
+nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
 
 " Additional mapping for buffer search
 " nnoremap <silent> <leader>bb :CtrlPBuffer<cr>
-" map <D-e> :CtrlPBuffer<CR>
+map <D-e> :CtrlPBuffer<CR>
 
 " Map most recently used
 nnoremap <silent> <C-p> :CtrlPMRU<cr>
