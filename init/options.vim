@@ -1,6 +1,8 @@
 scriptencoding utf-8
 
-set guifont=Menlo:h14
+set colorcolumn=80
+
+set guifont=Source\ Code\ Pro:h16
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
