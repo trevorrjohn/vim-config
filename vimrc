@@ -149,6 +149,7 @@ else
   Plugin 'sjl/vitality.vim'
   Plugin 'brysgo/test_server'
   Plugin 'mdelillo/vim-simple-bdd'
+  Plugin 'benmills/vimux'
 
   call vundle#end()
 
