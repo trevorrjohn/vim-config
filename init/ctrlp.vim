@@ -5,3 +5,4 @@ let g:ctrlp_map = '<leader>f'
 " let g:ctrlp_user_command = 'rg --literal --files-with-matches --nocolor --hidden --filename-pattern "" %s'
 
 let g:ctrlp_path_nolim = 0
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
