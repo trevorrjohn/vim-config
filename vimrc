@@ -30,15 +30,23 @@ else
   "
   " Colorschemes
   "
-  Plugin 'tpope/vim-vividchalk'
-  Plugin 'chriskempson/base16-vim'
-  Plugin 'molokai'
-  Plugin 'altercation/vim-colors-solarized'
-  Plugin 'wgibbs/vim-irblack'
-  Plugin 'chriskempson/vim-tomorrow-theme'
-  Plugin 'candycode.vim'
-  Plugin 'Colour-Sampler-Pack'
-  Plugin 'flazz/vim-colorschemes'
+  " Plugin 'tpope/vim-vividchalk'
+  " Plugin 'chriskempson/base16-vim'
+  " Plugin 'molokai'
+  " Plugin 'altercation/vim-colors-solarized'
+  " Plugin 'wgibbs/vim-irblack'
+  " Plugin 'chriskempson/vim-tomorrow-theme'
+  Plugin 'romainl/Apprentice'
+  Plugin 'tlhr/anderson.vim'
+  Plugin 'ajmwagar/vim-deus'
+  Plugin 'keith/parsec.vim'
+  Plugin 'dikiaap/minimalist'
+  Plugin 'rakr/vim-one'
+  Plugin 'AlessandroYorba/Sierra'
+  Plugin 'vim-scripts/twilight256.vim'
+  " Plugin 'candycode.vim'
+  " Plugin 'Colour-Sampler-Pack'
+  " Plugin 'flazz/vim-colorschemes'
 
   "
   " Ruby / Rails
@@ -144,6 +152,7 @@ else
   Plugin 'tpope/vim-fugitive'
   Plugin 'airblade/vim-gitgutter'
   Plugin 'pivotal/tmux-config'
+  Plugin 'benmills/vimux'
   Plugin 'tpope/vim-dispatch'
   Plugin 'carlobaldassi/ConqueTerm'
   Plugin 'sjl/vitality.vim'
