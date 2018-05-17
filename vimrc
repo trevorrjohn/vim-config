@@ -72,7 +72,7 @@ else
   Plugin 'tpope/vim-unimpaired'
   Plugin 'sjl/gundo.vim'
   Plugin 'godlygeek/tabular'
-  Plugin 'scrooloose/syntastic'
+  Plugin 'vim-syntastic/syntastic'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'ervandew/supertab'
@@ -158,7 +158,6 @@ else
   Plugin 'sjl/vitality.vim'
   Plugin 'brysgo/test_server'
   Plugin 'mdelillo/vim-simple-bdd'
-  Plugin 'benmills/vimux'
 
   call vundle#end()
 
