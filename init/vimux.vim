@@ -1,5 +1,7 @@
 " Run the current file with rspec
-map <Leader>rb :call VimuxRunCommand("rspec " . bufname("%"))<CR>
+map <Leader>rr :call VimuxRunCommand("bundle exec rspec " . bufname("%"))<CR>
+" Run the current line with rspec
+map <Leader>rt :call VimuxRunCommand("bundle exec rspec " . bufname("%") . ":" . line("."))<CR>
 " Use nearest window if available
 let g:VimuxUseNearest = 1 " on be default
 
