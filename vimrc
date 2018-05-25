@@ -58,6 +58,7 @@ else
   Plugin 'jgdavey/vim-blockle'
   Plugin 'tpope/vim-rbenv'
   Plugin 'tpope/vim-rake'
+  Plugin 'skalnik/vim-vroom'
 
   "
   " General Editing
