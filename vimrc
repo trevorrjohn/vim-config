@@ -145,6 +145,7 @@ else
   Plugin 'digitaltoad/vim-pug'
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'luan/vim-concourse'
+  Plugin 'rust-lang/rust.vim'
 
   "
   " Development Tool Integration
