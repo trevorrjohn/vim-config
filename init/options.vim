@@ -47,6 +47,7 @@ set history=1024                " History size
 set smartcase                   " Smart case-sensitivity when searching (overrides ignorecase)
 
 set autoread                    " No prompt for file changes outside Vim
+au FocusGained,BufEnter * :checktime " Refresh file when fucus gained or buf entered
 
 set swapfile                    " Keep swapfiles
 set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
