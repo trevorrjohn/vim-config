@@ -130,22 +130,23 @@ map <leader>u :GundoToggle<CR>
 
 " fzf
 " <leader>f
-" nmap <leader>f :FZF<CR>
-" nmap <leader>F :FZF<CR>
+nnoremap <silent> <leader>f :FZF<CR>
+nnoremap <silent> <leader>F :FZF<CR>
+nnoremap <silent> <C-p> :History<CR>
 
 " ctrlp
 " <leader>f is the default trigger (set in init/ctrlp.vim)
-nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
+" nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
 
 " Additional mapping for buffer search
 " nnoremap <silent> <leader>bb :CtrlPBuffer<cr>
-map <D-e> :CtrlPBuffer<CR>
+" map <D-e> :CtrlPBuffer<CR>
 
 " Map most recently used
-nnoremap <silent> <C-p> :CtrlPMRU<cr>
+" nnoremap <silent> <C-p> :CtrlPMRU<cr>
 
 " Cmd-Shift-P to clear the cache
-nnoremap <silent> <D-P> :ClearCtrlPCache<cr>
+" nnoremap <silent> <D-P> :ClearCtrlPCache<cr>
 
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much
