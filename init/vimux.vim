@@ -1,22 +1,22 @@
 " Run the current file with rspec
-map <Leader>rr :call VimuxRunCommand("bundle exec rspec " . bufname("%"))<CR>
+map <Leader>rr :silent! w<CR> :call VimuxRunCommand("bundle exec rspec " . bufname("%"))<CR>
 " Run the current line with rspec
-map <Leader>rt :call VimuxRunCommand("bundle exec rspec " . bufname("%") . ":" . line("."))<CR>
+map <Leader>rt :silent! w<CR> :call VimuxRunCommand("bundle exec rspec " . bufname("%") . ":" . line("."))<CR>
 " Use nearest window if available
 let g:VimuxUseNearest = 1 " on be default
 
 " Prompt for a command to run map
-map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vp :silent! w<CR> :VimuxPromptCommand<CR>
 
 " Run last command executed by VimuxRunCommand
-map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vl :silent! w<CR> :VimuxRunLastCommand<CR>
 " Inspect runner pane map
-map <Leader>vi :VimuxInspectRunner<CR>
+map <Leader>vi :silent! w<CR> :VimuxInspectRunner<CR>
 " Close vim tmux runner opened by VimuxRunCommand
-map <Leader>vq :VimuxCloseRunner<CR>
+map <Leader>vq :silent! w<CR> :VimuxCloseRunner<CR>
 " Interrupt any command running in the runner pane map
-map <Leader>vs :VimuxInterruptRunner<CR>
+map <Leader>vs :silent! w<CR> :VimuxInterruptRunner<CR>
 " Zoom the tmux runner page
-map <Leader>vz :VimuxZoomRunner<CR>
+map <Leader>vz :silent! w<CR> :VimuxZoomRunner<CR>
 " Vimux Runner height
 let g:VimuxHeight = "20"
