@@ -151,28 +151,28 @@ nnoremap <silent> <C-p> :History<CR>
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'
-map <leader>jm :CtrlP app/models<CR>
-map <leader>jc :CtrlP app/controllers<CR>
-map <leader>jv :CtrlP app/views<CR>
-map <leader>jh :CtrlP app/helpers<CR>
-map <leader>jl :CtrlP lib<CR>
-map <leader>jp :CtrlP public<CR>
-map <leader>js :CtrlP spec<CR>
-map <leader>jf :CtrlP fast_spec<CR>
-map <leader>jd :CtrlP db<CR>
-map <leader>jC :CtrlP config<CR>
-map <leader>jV :CtrlP vendor<CR>
-map <leader>jF :CtrlP factories<CR>
-map <leader>jT :CtrlP test<CR>
+map <leader>jm :FZF app/models<CR>
+map <leader>jc :FZF app/controllers<CR>
+map <leader>jv :FZF app/views<CR>
+map <leader>jh :FZF app/helpers<CR>
+map <leader>jl :FZF lib<CR>
+map <leader>jp :FZF public<CR>
+map <leader>js :FZF spec<CR>
+map <leader>jf :FZF fast_spec<CR>
+map <leader>jd :FZF db<CR>
+map <leader>jC :FZF config<CR>
+map <leader>jV :FZF vendor<CR>
+map <leader>jF :FZF factories<CR>
+map <leader>jT :FZF test<CR>
 
 "Cmd-Shift-(M)ethod - jump to a method (tag in current file)
 "Ctrl-m is not good - it overrides behavior of Enter
 " nnoremap <silent> <D-M> :CtrlPBufTag<CR>
 
 " Mappings inherited from FuzzyFinder
-map <leader><C-N> :CtrlPCurWD<CR>
-map <leader>n :CtrlPCurWD<CR>
-map <D-N> :CtrlPCurWD<CR>
+" map <leader><C-N> :CtrlPCurWD<CR>
+" map <leader>n :CtrlPCurWD<CR>
+" map <D-N> :CtrlPCurWD<CR>
 
 " Write all
 map <silent> <F19>WriteAll :silent! wall<CR>
