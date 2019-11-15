@@ -1,7 +1,17 @@
+" Vimux config https://github.com/benmills/vimux/blob/master/doc/vimux.txt
+function RubyTest()
+  if @% =~# '_spec.rb'
+    return " rspec "
+  elseif @% =~# '_test.rb'
+    return " rails test "
+  else
+    echom 'Oops not a spec file'
+  endif
+endfunction
 " Run the current file with rspec
-map <Leader>rr :silent! w<CR> :silent! VimuxRunCommand("bundle exec rspec " . bufname("%"))<CR>
+map <Leader>rr :silent! w<CR> :silent! VimuxRunCommand("bundle exec" . RubyTest() . bufname("%"))<CR>
 " Run the current line with rspec
-map <Leader>rt :silent! w<CR> :silent! VimuxRunCommand("bundle exec rspec " . bufname("%") . ":" . line("."))<CR>
+map <Leader>rt :silent! w<CR> :silent! VimuxRunCommand("bundle exec" . RubyTest() . bufname("%") . ":" . line("."))<CR>
 " Use nearest window if available
 let g:VimuxUseNearest = 1 " on be default
 
